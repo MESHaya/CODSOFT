@@ -1,0 +1,201 @@
+style {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ebd3d3;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333; /* Use a darker color for better contrast */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Georgia", serif; /* Add a more decorative font for headings */
+  color: #741d29; /* Ensure heading colors are consistent */
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px; /* Add padding for better spacing */
+}
+
+section {
+  padding: 50px 0; /* Add vertical spacing between sections */
+}
+
+.heading,
+.title {
+  margin-bottom: 30px; /* Consistent spacing below titles */
+  text-align: center;
+  color: #ae5631;
+}
+
+#header {
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-color: antiquewhite;
+  background-image: url(_images/tea5.jpg);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  color: rgb(253, 253, 253);
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  padding: 5px;
+}
+
+nav ul li a:hover {
+  color: #741d29;
+  text-shadow: 0 0 10px #741d29;
+}
+nav ul li a::after {
+  content: "";
+  bottom: -25px;
+  height: 0px;
+  width: 10px;
+  left: 50%;
+  position: absolute;
+  border-radius: 50%;
+  transition: all 300ms;
+  background-color: #741d29;
+}
+
+nav ul li a:hover:after {
+  height: 10px;
+  left: 50%;
+}
+
+#header {
+  font-size: 20px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 50px;
+  color: #f9f9f9;
+}
+.heading span {
+  color: #741d29;
+  text-shadow: 10px;
+}
+
+.text {
+  justify-content: center;
+}
+.button-container {
+  text-align: center; /* Center the content inside this container */
+  margin-top: 20px; /* Add some space between the heading and the button */
+}
+
+.button {
+  text-decoration: none;
+  align-content: center;
+  color: white;
+  padding: 8px 22px;
+  border-radius: 6px;
+  background-color: rgb(108, 30, 43);
+  transition: all 0.2s ease;
+  margin-top: 20px; /* Add space between the heading and the button */
+}
+
+.contactButton:active {
+  transform: scale(0.96);
+}
+#home,
+#About,
+#contact {
+  flex: 1;
+  min-width: 250px; /* Adjust based on your design preference */
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.bundle-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bundle-tile {
+  flex: 1;
+  min-width: 250px; /* Adjust based on your design preference */
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.bundle-tile h4 {
+  margin-bottom: 10px;
+  color: #ae5631;
+}
+
+.bundle-tile p {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .bundle-tile {
+    min-width: 100%;
+    margin: 10px 0;
+  }
+}
+
+#bundles {
+  width: 100%;
+  height: auto; /* Change to auto so it adjusts based on content height */
+  background-size: cover;
+  background-position: center;
+  background-image: url(_images/tea4.jpg);
+  background-color: antiquewhite;
+  padding: 50px 0; /* Add some padding for spacing */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
